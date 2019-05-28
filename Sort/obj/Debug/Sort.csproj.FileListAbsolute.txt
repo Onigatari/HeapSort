@@ -1,0 +1,14 @@
+D:\Sort\Sort\bin\Debug\Sort.exe.config
+D:\Sort\Sort\bin\Debug\Sort.exe
+D:\Sort\Sort\bin\Debug\Sort.pdb
+D:\Sort\Sort\obj\Debug\Sort.csprojAssemblyReference.cache
+D:\Sort\Sort\obj\Debug\Sort.Properties.Resources.resources
+D:\Sort\Sort\obj\Debug\Sort.csproj.GenerateResource.cache
+D:\Sort\Sort\obj\Debug\Sort.csproj.CoreCompileInputs.cache
+D:\Sort\Sort\obj\Debug\Sort.exe
+D:\Sort\Sort\obj\Debug\Sort.pdb
+D:\Sort\Sort\obj\Debug\Sort.MainForm.resources
+D:\Sort\Sort\obj\Debug\Sort.UserPanel.BeginPanel.resources
+D:\Sort\Sort\obj\Debug\Sort.UserPanel.FilePanel.resources
+D:\Sort\Sort\obj\Debug\Sort.UserPanel.WebPanel.resources
+D:\Sort\Sort\obj\Debug\Sort.UserPanel.AnimePanel.resources
