@@ -12,3 +12,17 @@ D:\Sort\Sort\obj\Debug\Sort.UserPanel.BeginPanel.resources
 D:\Sort\Sort\obj\Debug\Sort.UserPanel.FilePanel.resources
 D:\Sort\Sort\obj\Debug\Sort.UserPanel.WebPanel.resources
 D:\Sort\Sort\obj\Debug\Sort.UserPanel.AnimePanel.resources
+C:\Users\DAZAI\Desktop\HeapSort\Sort\bin\Debug\Sort.exe.config
+C:\Users\DAZAI\Desktop\HeapSort\Sort\bin\Debug\Sort.exe
+C:\Users\DAZAI\Desktop\HeapSort\Sort\bin\Debug\Sort.pdb
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.csprojAssemblyReference.cache
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.MainForm.resources
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.Properties.Resources.resources
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.UserPanel.AnimePanel.resources
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.UserPanel.BeginPanel.resources
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.UserPanel.FilePanel.resources
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.UserPanel.WebPanel.resources
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.csproj.GenerateResource.cache
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.csproj.CoreCompileInputs.cache
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.exe
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.pdb

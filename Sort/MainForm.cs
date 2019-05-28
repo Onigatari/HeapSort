@@ -125,11 +125,5 @@ namespace Sort
                 this.Top = (this.Top + e.Y) - y;
             }
         }
-
-        private void TopPanel_DoubleClick(object sender, EventArgs e)
-        {
-            if (base.WindowState == FormWindowState.Normal)
-                base.WindowState = FormWindowState.Minimized;
-        }
     }
 }

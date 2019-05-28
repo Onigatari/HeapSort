@@ -174,7 +174,6 @@
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Size = new System.Drawing.Size(1050, 40);
             this.TopPanel.TabIndex = 1;
-            this.TopPanel.DoubleClick += new System.EventHandler(this.TopPanel_DoubleClick);
             this.TopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseDown);
             this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             // 

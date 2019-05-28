@@ -49,23 +49,23 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1030, 150);
+            this.panel1.Size = new System.Drawing.Size(1030, 97);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 150);
+            this.panel2.Location = new System.Drawing.Point(0, 97);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 450);
+            this.panel2.Size = new System.Drawing.Size(100, 503);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(930, 150);
+            this.panel3.Location = new System.Drawing.Point(930, 97);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 370);
+            this.panel3.Size = new System.Drawing.Size(100, 423);
             this.panel3.TabIndex = 2;
             // 
             // panel4
@@ -98,7 +98,7 @@
             this.MasReadTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.MasReadTextBox.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MasReadTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.MasReadTextBox.Location = new System.Drawing.Point(106, 156);
+            this.MasReadTextBox.Location = new System.Drawing.Point(106, 97);
             this.MasReadTextBox.Name = "MasReadTextBox";
             this.MasReadTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.MasReadTextBox.Size = new System.Drawing.Size(818, 100);
@@ -114,7 +114,7 @@
             this.ClearButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClearButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ClearButton.Location = new System.Drawing.Point(594, 262);
+            this.ClearButton.Location = new System.Drawing.Point(594, 203);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(330, 61);
             this.ClearButton.TabIndex = 9;
@@ -130,7 +130,7 @@
             this.RandomButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.RandomButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RandomButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RandomButton.Location = new System.Drawing.Point(106, 262);
+            this.RandomButton.Location = new System.Drawing.Point(106, 203);
             this.RandomButton.Name = "RandomButton";
             this.RandomButton.Size = new System.Drawing.Size(482, 61);
             this.RandomButton.TabIndex = 10;
@@ -144,7 +144,7 @@
             this.MasWriteTextBox.EnableAutoDragDrop = true;
             this.MasWriteTextBox.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MasWriteTextBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.MasWriteTextBox.Location = new System.Drawing.Point(106, 414);
+            this.MasWriteTextBox.Location = new System.Drawing.Point(106, 355);
             this.MasWriteTextBox.Name = "MasWriteTextBox";
             this.MasWriteTextBox.ReadOnly = true;
             this.MasWriteTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
@@ -158,7 +158,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(106, 326);
+            this.label1.Location = new System.Drawing.Point(106, 267);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(444, 38);
             this.label1.TabIndex = 12;
@@ -170,7 +170,7 @@
             this.TimerSec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.TimerSec.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.TimerSec.ForeColor = System.Drawing.SystemColors.Control;
-            this.TimerSec.Location = new System.Drawing.Point(594, 328);
+            this.TimerSec.Location = new System.Drawing.Point(594, 269);
             this.TimerSec.Name = "TimerSec";
             this.TimerSec.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.TimerSec.Size = new System.Drawing.Size(330, 38);
@@ -182,7 +182,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(106, 373);
+            this.label2.Location = new System.Drawing.Point(106, 314);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(460, 33);
             this.label2.TabIndex = 15;
@@ -194,7 +194,7 @@
             this.CountArray.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.CountArray.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.CountArray.ForeColor = System.Drawing.SystemColors.Control;
-            this.CountArray.Location = new System.Drawing.Point(594, 372);
+            this.CountArray.Location = new System.Drawing.Point(594, 313);
             this.CountArray.Name = "CountArray";
             this.CountArray.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.CountArray.Size = new System.Drawing.Size(330, 38);
