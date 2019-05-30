@@ -14,16 +14,60 @@ namespace Sort.UserPanel
 {
     public partial class FilePanel : UserControl
     {
+        public static SortedDictionary<int, int> Graf = new SortedDictionary<int, int>();
+        public static int Num;
+        public static string algoTime;
+        bool FirstClicl = false;
+
         public FilePanel()
         {
             InitializeComponent();
-            for (int n = 1; n <= 1000; n++)
+            FuncAlgo.Series[1].Points.Clear();
+            GrafDict();
+            PaintGraf();
+            for(int n = 1; n <= 1000; n++)
                 FuncAlgo.Series[0].Points.AddXY(n, n * Math.Log(n, 2));
+        }
+
+        public void GrafDict()
+        {
+            StreamReader sr = new StreamReader("grafPoint.txt");
+            int n = int.Parse(sr.ReadLine());
+            Num = n;
+            for (int i = 0; i < n; i++)
+            {
+                string[] temp = sr.ReadLine().Split();
+                string temp_Index = temp[0];
+                string temp_Num = temp[1];
+
+                if (!Graf.ContainsKey(int.Parse(temp_Index)))
+                    Graf.Add(int.Parse(temp_Index), (int.Parse(temp_Num)));
+                else
+                    Graf[int.Parse(temp_Index)] = int.Parse(temp_Num);
+            }
+            sr.Close();
+        }
+
+        public void PaintGraf()
+        {
+            FuncAlgo.Series[1].Points.Clear();
+            foreach (var item in Graf)
+                FuncAlgo.Series[1].Points.AddXY(item.Key, item.Value);
+        }
+
+        public void AddGraf(int index, int num)
+        {
+            if (!Graf.ContainsKey(index))
+            {
+                Graf.Add(index, num);
+                Num++;
+            }
+            else
+                Graf[index] = num;
         }
 
         private void Sort_Click(object sender, EventArgs e)
         {
-            FuncAlgo.Series[1].Points.Clear();
             NewMasTextBox.Clear();
             Stopwatch time = new Stopwatch();
             long[] array = HeapSort.Sort.arrayReadText(MainMasTextBox.Text);
@@ -31,7 +75,7 @@ namespace Sort.UserPanel
             HeapSort.Sort.heapSort(ref array);
             time.Stop();
             string temp = HeapSort.Sort.outputArray(ref array);
-            string algoTime = time.Elapsed.Ticks.ToString();
+            algoTime = time.Elapsed.Ticks.ToString();
             int n = HeapSort.Count.size;
             NewMasTextBox.Text += "================================\n";
             NewMasTextBox.Text += "Теоретическое время работы: " + Math.Ceiling(n * Math.Log(n, 2)) + "\n";
@@ -42,8 +86,6 @@ namespace Sort.UserPanel
             NewMasTextBox.Text += '\n';
             TimerSec.SelectionAlignment = HorizontalAlignment.Center;
             TimerSec.Text = algoTime;
-            for (int i = 1; i <= 1000; i++)
-                FuncAlgo.Series[1].Points.AddXY(i, int.Parse(algoTime));
         }
 
         private void Open_Click(object sender, EventArgs e)
@@ -66,7 +108,6 @@ namespace Sort.UserPanel
 
         private void Clear_Click(object sender, EventArgs e)
         {
-            FuncAlgo.Series[1].Points.Clear();
             MainMasTextBox.Clear();
             NewMasTextBox.Clear();
             TimerSec.Clear();
@@ -88,6 +129,20 @@ namespace Sort.UserPanel
             }
             line += rnd.Next(-10000, 10000);
             MainMasTextBox.Text = line;
+        }
+
+        private void AddBottun_Click(object sender, EventArgs e)
+        {
+            if (FirstClicl)
+            {
+                AddGraf(HeapSort.Count.size, int.Parse(algoTime));
+                PaintGraf();
+            }
+            else
+            {
+                Clear_Click(sender, e);
+                FirstClicl = true;
+            }
         }
     }
 }

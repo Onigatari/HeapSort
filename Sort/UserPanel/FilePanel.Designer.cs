@@ -41,6 +41,9 @@
             this.Save = new System.Windows.Forms.Button();
             this.Open = new System.Windows.Forms.Button();
             this.Sort = new System.Windows.Forms.Button();
+            this.AddBottun = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FuncAlgo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,7 +132,11 @@
             chartArea2.BackImageTransparentColor = System.Drawing.Color.White;
             chartArea2.BackSecondaryColor = System.Drawing.Color.White;
             chartArea2.BorderColor = System.Drawing.Color.White;
+            chartArea2.CursorX.IsUserEnabled = true;
+            chartArea2.CursorX.IsUserSelectionEnabled = true;
             chartArea2.CursorX.LineColor = System.Drawing.Color.WhiteSmoke;
+            chartArea2.CursorY.IsUserEnabled = true;
+            chartArea2.CursorY.IsUserSelectionEnabled = true;
             chartArea2.CursorY.LineColor = System.Drawing.Color.WhiteSmoke;
             chartArea2.Name = "ChartArea1";
             this.FuncAlgo.ChartAreas.Add(chartArea2);
@@ -155,7 +162,7 @@
             series3.Name = "Асимптотика n log(n)";
             series4.BorderWidth = 4;
             series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series4.Legend = "Legend1";
             series4.Name = "Кол-во операций";
             this.FuncAlgo.Series.Add(series3);
@@ -172,9 +179,9 @@
             this.RandomButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.RandomButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RandomButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RandomButton.Location = new System.Drawing.Point(3, 541);
+            this.RandomButton.Location = new System.Drawing.Point(339, 541);
             this.RandomButton.Name = "RandomButton";
-            this.RandomButton.Size = new System.Drawing.Size(280, 54);
+            this.RandomButton.Size = new System.Drawing.Size(186, 54);
             this.RandomButton.TabIndex = 24;
             this.RandomButton.Text = "Случайная последовательность";
             this.RandomButton.UseVisualStyleBackColor = false;
@@ -204,9 +211,9 @@
             this.Save.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Save.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Save.Location = new System.Drawing.Point(289, 540);
+            this.Save.Location = new System.Drawing.Point(3, 540);
             this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(200, 55);
+            this.Save.Size = new System.Drawing.Size(162, 55);
             this.Save.TabIndex = 22;
             this.Save.Text = "Сохранить";
             this.Save.UseVisualStyleBackColor = false;
@@ -220,9 +227,9 @@
             this.Open.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Open.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Open.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Open.Location = new System.Drawing.Point(495, 540);
+            this.Open.Location = new System.Drawing.Point(171, 540);
             this.Open.Name = "Open";
-            this.Open.Size = new System.Drawing.Size(200, 55);
+            this.Open.Size = new System.Drawing.Size(162, 55);
             this.Open.TabIndex = 21;
             this.Open.Text = "Открыть";
             this.Open.UseVisualStyleBackColor = false;
@@ -244,11 +251,54 @@
             this.Sort.UseVisualStyleBackColor = false;
             this.Sort.Click += new System.EventHandler(this.Sort_Click);
             // 
+            // AddBottun
+            // 
+            this.AddBottun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.AddBottun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddBottun.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.AddBottun.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AddBottun.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddBottun.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.AddBottun.Location = new System.Drawing.Point(531, 540);
+            this.AddBottun.Name = "AddBottun";
+            this.AddBottun.Size = new System.Drawing.Size(162, 55);
+            this.AddBottun.TabIndex = 25;
+            this.AddBottun.Text = "Добавить";
+            this.AddBottun.UseVisualStyleBackColor = false;
+            this.AddBottun.Click += new System.EventHandler(this.AddBottun_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(842, 495);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Кол-во элементов";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(500, 247);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Ticks";
+            // 
             // FilePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.AddBottun);
             this.Controls.Add(this.RandomButton);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Save);
@@ -262,6 +312,7 @@
             this.Size = new System.Drawing.Size(1030, 600);
             ((System.ComponentModel.ISupportInitialize)(this.FuncAlgo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -276,5 +327,8 @@
         private System.Windows.Forms.Button Open;
         private System.Windows.Forms.Button Sort;
         public System.Windows.Forms.DataVisualization.Charting.Chart FuncAlgo;
+        private System.Windows.Forms.Button AddBottun;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

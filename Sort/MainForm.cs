@@ -30,7 +30,7 @@ namespace Sort
 
         private void FileButton_Click(object sender, EventArgs e)
         {
-            filePanel2.BringToFront();
+            filePanel1.BringToFront();
             SidePanel.Height = FileButton.Height;
             SidePanel.Top = FileButton.Top;
         }
@@ -53,6 +53,11 @@ namespace Sort
         {
             SidePanel.Height = ExitButton.Height;
             SidePanel.Top = ExitButton.Top;
+            StreamWriter sw = new StreamWriter("grafPoint.txt");
+            sw.WriteLine(UserPanel.FilePanel.Num);
+            foreach (var item in UserPanel.FilePanel.Graf)
+                sw.WriteLine("{0} {1}", item.Key, item.Value);
+            sw.Close();
             Application.Exit();
         }
 

@@ -39,12 +39,12 @@
             this.TopPanel = new System.Windows.Forms.Panel();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.beginPanel1 = new Sort.UserPanel.BeginPanel();
-            this.filePanel2 = new Sort.UserPanel.FilePanel();
             this.webPanel1 = new Sort.UserPanel.WebPanel();
             this.animePanel1 = new Sort.UserPanel.AnimePanel();
             this.LogoPanel = new System.Windows.Forms.Panel();
             this.TextLabel = new System.Windows.Forms.Label();
             this.NameApp = new System.Windows.Forms.Label();
+            this.filePanel1 = new Sort.UserPanel.FilePanel();
             this.LeftPanel.SuspendLayout();
             this.MainPanel.SuspendLayout();
             this.LogoPanel.SuspendLayout();
@@ -180,9 +180,9 @@
             // MainPanel
             // 
             this.MainPanel.Controls.Add(this.beginPanel1);
-            this.MainPanel.Controls.Add(this.filePanel2);
             this.MainPanel.Controls.Add(this.webPanel1);
             this.MainPanel.Controls.Add(this.animePanel1);
+            this.MainPanel.Controls.Add(this.filePanel1);
             this.MainPanel.Location = new System.Drawing.Point(258, 90);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1030, 600);
@@ -196,15 +196,6 @@
             this.beginPanel1.Name = "beginPanel1";
             this.beginPanel1.Size = new System.Drawing.Size(1030, 600);
             this.beginPanel1.TabIndex = 0;
-            // 
-            // filePanel2
-            // 
-            this.filePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.filePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.filePanel2.Location = new System.Drawing.Point(0, 0);
-            this.filePanel2.Name = "filePanel2";
-            this.filePanel2.Size = new System.Drawing.Size(1030, 600);
-            this.filePanel2.TabIndex = 1;
             // 
             // webPanel1
             // 
@@ -260,6 +251,15 @@
             this.NameApp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NameApp_MouseDown);
             this.NameApp.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NameApp_MouseMove);
             // 
+            // filePanel1
+            // 
+            this.filePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.filePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.filePanel1.Location = new System.Drawing.Point(0, 0);
+            this.filePanel1.Name = "filePanel1";
+            this.filePanel1.Size = new System.Drawing.Size(1030, 600);
+            this.filePanel1.TabIndex = 4;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +271,7 @@
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.LeftPanel);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -298,9 +299,9 @@
         private System.Windows.Forms.Button AniButton;
         private System.Windows.Forms.Panel SidePanel;
         private UserPanel.BeginPanel beginPanel1;
-        private UserPanel.FilePanel filePanel2;
         private UserPanel.WebPanel webPanel1;
         private UserPanel.AnimePanel animePanel1;
+        private UserPanel.FilePanel filePanel1;
     }
 }
 
