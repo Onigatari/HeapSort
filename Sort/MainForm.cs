@@ -37,7 +37,7 @@ namespace Sort
 
         private void AniButton_Click(object sender, EventArgs e)
         {
-            animePanel1.BringToFront();
+            animePanel2.BringToFront();
             SidePanel.Height = AniButton.Height;
             SidePanel.Top = AniButton.Top;
         }

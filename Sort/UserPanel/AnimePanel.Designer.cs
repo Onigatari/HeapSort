@@ -38,6 +38,14 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TextPanel1 = new System.Windows.Forms.Panel();
+            this.TextPanel2 = new System.Windows.Forms.Panel();
+            this.TextPanel5 = new System.Windows.Forms.Panel();
+            this.TextPanel3 = new System.Windows.Forms.Panel();
+            this.TextPanel4 = new System.Windows.Forms.Panel();
+            this.TextPanel6 = new System.Windows.Forms.Panel();
+            this.TextPanel7 = new System.Windows.Forms.Panel();
+            this.TextBox = new System.Windows.Forms.RichTextBox();
             this.TopPanel.SuspendLayout();
             this.LowPanel.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +68,13 @@
             // 
             // TopPanel
             // 
+            this.TopPanel.Controls.Add(this.TextPanel7);
+            this.TopPanel.Controls.Add(this.TextPanel6);
+            this.TopPanel.Controls.Add(this.TextPanel5);
+            this.TopPanel.Controls.Add(this.TextPanel4);
+            this.TopPanel.Controls.Add(this.TextPanel3);
+            this.TopPanel.Controls.Add(this.TextPanel2);
+            this.TopPanel.Controls.Add(this.TextPanel1);
             this.TopPanel.Controls.Add(this.panel1);
             this.TopPanel.Controls.Add(this.panel2);
             this.TopPanel.Controls.Add(this.panel3);
@@ -75,6 +90,7 @@
             // 
             // LowPanel
             // 
+            this.LowPanel.Controls.Add(this.TextBox);
             this.LowPanel.Controls.Add(this.StartButton);
             this.LowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LowPanel.Location = new System.Drawing.Point(0, 540);
@@ -138,6 +154,74 @@
             this.panel1.TabIndex = 0;
             this.panel1.Visible = false;
             // 
+            // TextPanel1
+            // 
+            this.TextPanel1.Location = new System.Drawing.Point(70, 26);
+            this.TextPanel1.Name = "TextPanel1";
+            this.TextPanel1.Size = new System.Drawing.Size(60, 60);
+            this.TextPanel1.TabIndex = 1;
+            this.TextPanel1.Visible = false;
+            // 
+            // TextPanel2
+            // 
+            this.TextPanel2.Location = new System.Drawing.Point(140, 26);
+            this.TextPanel2.Name = "TextPanel2";
+            this.TextPanel2.Size = new System.Drawing.Size(60, 60);
+            this.TextPanel2.TabIndex = 2;
+            this.TextPanel2.Visible = false;
+            // 
+            // TextPanel5
+            // 
+            this.TextPanel5.Location = new System.Drawing.Point(350, 26);
+            this.TextPanel5.Name = "TextPanel5";
+            this.TextPanel5.Size = new System.Drawing.Size(60, 60);
+            this.TextPanel5.TabIndex = 2;
+            this.TextPanel5.Visible = false;
+            // 
+            // TextPanel3
+            // 
+            this.TextPanel3.Location = new System.Drawing.Point(210, 26);
+            this.TextPanel3.Name = "TextPanel3";
+            this.TextPanel3.Size = new System.Drawing.Size(60, 60);
+            this.TextPanel3.TabIndex = 2;
+            this.TextPanel3.Visible = false;
+            // 
+            // TextPanel4
+            // 
+            this.TextPanel4.Location = new System.Drawing.Point(280, 26);
+            this.TextPanel4.Name = "TextPanel4";
+            this.TextPanel4.Size = new System.Drawing.Size(60, 60);
+            this.TextPanel4.TabIndex = 2;
+            this.TextPanel4.Visible = false;
+            // 
+            // TextPanel6
+            // 
+            this.TextPanel6.Location = new System.Drawing.Point(420, 26);
+            this.TextPanel6.Name = "TextPanel6";
+            this.TextPanel6.Size = new System.Drawing.Size(60, 60);
+            this.TextPanel6.TabIndex = 2;
+            this.TextPanel6.Visible = false;
+            // 
+            // TextPanel7
+            // 
+            this.TextPanel7.Location = new System.Drawing.Point(490, 26);
+            this.TextPanel7.Name = "TextPanel7";
+            this.TextPanel7.Size = new System.Drawing.Size(60, 60);
+            this.TextPanel7.TabIndex = 2;
+            this.TextPanel7.Visible = false;
+            // 
+            // TextBox
+            // 
+            this.TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.TextBox.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TextBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.TextBox.Location = new System.Drawing.Point(3, 6);
+            this.TextBox.Name = "TextBox";
+            this.TextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.TextBox.Size = new System.Drawing.Size(490, 51);
+            this.TextBox.TabIndex = 13;
+            this.TextBox.Text = "";
+            // 
             // AnimePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,5 +248,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel TextPanel7;
+        private System.Windows.Forms.Panel TextPanel6;
+        private System.Windows.Forms.Panel TextPanel5;
+        private System.Windows.Forms.Panel TextPanel4;
+        private System.Windows.Forms.Panel TextPanel3;
+        private System.Windows.Forms.Panel TextPanel2;
+        private System.Windows.Forms.Panel TextPanel1;
+        private System.Windows.Forms.RichTextBox TextBox;
     }
 }

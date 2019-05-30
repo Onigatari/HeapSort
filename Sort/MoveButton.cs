@@ -10,38 +10,36 @@ namespace Sort
     class MoveButton:Button
     {
         Timer timer = new Timer();
-        double tick = 10;
-        double currentTick = 0;
-        double dif_x, dif_y;
+        int tick = 10;
+        int currentTick = 0;
+        double dX, dY;
 
         private void timerTick(object sender, EventArgs e)
         {
             currentTick++;
-            if (currentTick > tick) timer.Enabled = false;
-            Left += Convert.ToInt32(dif_x);
-            Top += Convert.ToInt32(dif_y);
+            if (currentTick >= tick) timer.Enabled = false;
+            Left += Convert.ToInt32(dX);
+            Top += Convert.ToInt32(dY);
         }
 
         public MoveButton() : base()
         {
+            timer.Tick += timerTick;
             Width = 60;
             Height = 60;
-            timer.Tick += timerTick;
         }
 
         public MoveButton(int x, int y) : this()
         {
-            Top = y;
             Left = x;
+            Top = y;
         }
 
         public void start(int x, int y)
         {
-            dif_x = x / tick;
-            dif_y = y / tick;
+            dX = x / tick;
+            dY = y / tick;
             timer.Enabled = true;
-            Left = Convert.ToInt32(dif_x);
-            Top = Convert.ToInt32(dif_y);
         }
     }
 }

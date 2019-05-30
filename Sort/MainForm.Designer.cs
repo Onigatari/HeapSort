@@ -38,13 +38,14 @@
             this.AniButton = new System.Windows.Forms.Button();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.beginPanel1 = new Sort.UserPanel.BeginPanel();
-            this.webPanel1 = new Sort.UserPanel.WebPanel();
-            this.animePanel1 = new Sort.UserPanel.AnimePanel();
             this.LogoPanel = new System.Windows.Forms.Panel();
             this.TextLabel = new System.Windows.Forms.Label();
             this.NameApp = new System.Windows.Forms.Label();
+            this.animePanel2 = new Sort.UserPanel.AnimePanel();
+            this.beginPanel1 = new Sort.UserPanel.BeginPanel();
+            this.webPanel1 = new Sort.UserPanel.WebPanel();
             this.filePanel1 = new Sort.UserPanel.FilePanel();
+            this.animePanel1 = new Sort.UserPanel.AnimePanel();
             this.LeftPanel.SuspendLayout();
             this.MainPanel.SuspendLayout();
             this.LogoPanel.SuspendLayout();
@@ -181,37 +182,12 @@
             // 
             this.MainPanel.Controls.Add(this.beginPanel1);
             this.MainPanel.Controls.Add(this.webPanel1);
-            this.MainPanel.Controls.Add(this.animePanel1);
             this.MainPanel.Controls.Add(this.filePanel1);
+            this.MainPanel.Controls.Add(this.animePanel2);
             this.MainPanel.Location = new System.Drawing.Point(258, 90);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1030, 600);
             this.MainPanel.TabIndex = 2;
-            // 
-            // beginPanel1
-            // 
-            this.beginPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.beginPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.beginPanel1.Location = new System.Drawing.Point(0, 0);
-            this.beginPanel1.Name = "beginPanel1";
-            this.beginPanel1.Size = new System.Drawing.Size(1030, 600);
-            this.beginPanel1.TabIndex = 0;
-            // 
-            // webPanel1
-            // 
-            this.webPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webPanel1.Location = new System.Drawing.Point(0, 0);
-            this.webPanel1.Name = "webPanel1";
-            this.webPanel1.Size = new System.Drawing.Size(1030, 600);
-            this.webPanel1.TabIndex = 2;
-            // 
-            // animePanel1
-            // 
-            this.animePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.animePanel1.Location = new System.Drawing.Point(0, 0);
-            this.animePanel1.Name = "animePanel1";
-            this.animePanel1.Size = new System.Drawing.Size(1030, 600);
-            this.animePanel1.TabIndex = 3;
             // 
             // LogoPanel
             // 
@@ -251,6 +227,31 @@
             this.NameApp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NameApp_MouseDown);
             this.NameApp.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NameApp_MouseMove);
             // 
+            // animePanel2
+            // 
+            this.animePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.animePanel2.Location = new System.Drawing.Point(0, 0);
+            this.animePanel2.Name = "animePanel2";
+            this.animePanel2.Size = new System.Drawing.Size(1030, 600);
+            this.animePanel2.TabIndex = 5;
+            // 
+            // beginPanel1
+            // 
+            this.beginPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.beginPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.beginPanel1.Location = new System.Drawing.Point(0, 0);
+            this.beginPanel1.Name = "beginPanel1";
+            this.beginPanel1.Size = new System.Drawing.Size(1030, 600);
+            this.beginPanel1.TabIndex = 0;
+            // 
+            // webPanel1
+            // 
+            this.webPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webPanel1.Location = new System.Drawing.Point(0, 0);
+            this.webPanel1.Name = "webPanel1";
+            this.webPanel1.Size = new System.Drawing.Size(1030, 600);
+            this.webPanel1.TabIndex = 2;
+            // 
             // filePanel1
             // 
             this.filePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -259,6 +260,14 @@
             this.filePanel1.Name = "filePanel1";
             this.filePanel1.Size = new System.Drawing.Size(1030, 600);
             this.filePanel1.TabIndex = 4;
+            // 
+            // animePanel1
+            // 
+            this.animePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.animePanel1.Location = new System.Drawing.Point(0, 0);
+            this.animePanel1.Name = "animePanel1";
+            this.animePanel1.Size = new System.Drawing.Size(1030, 600);
+            this.animePanel1.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -302,6 +311,7 @@
         private UserPanel.WebPanel webPanel1;
         private UserPanel.AnimePanel animePanel1;
         private UserPanel.FilePanel filePanel1;
+        private UserPanel.AnimePanel animePanel2;
     }
 }
 
