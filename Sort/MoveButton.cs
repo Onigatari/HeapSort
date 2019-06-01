@@ -7,24 +7,10 @@ using System.Windows.Forms;
 
 namespace Sort
 {
-    class MoveButton:Button
+    public class MoveButton:Button
     {
-        Timer timer = new Timer();
-        int tick = 10;
-        int currentTick = 0;
-        double dX, dY;
-
-        private void timerTick(object sender, EventArgs e)
-        {
-            currentTick++;
-            if (currentTick >= tick) timer.Enabled = false;
-            Left += Convert.ToInt32(dX);
-            Top += Convert.ToInt32(dY);
-        }
-
         public MoveButton() : base()
         {
-            timer.Tick += timerTick;
             Width = 60;
             Height = 60;
         }
@@ -35,11 +21,38 @@ namespace Sort
             Top = y;
         }
 
-        public void start(int x, int y)
+
+        public void swapMove(int x, int y)
         {
-            dX = x / tick;
-            dY = y / tick;
-            timer.Enabled = true;
+            if (Left > x)
+                while (Left != x)
+                    Left--;
+            else
+                while (Left != x)
+                    Left++;
+            if(Top > y)
+                while (Top != y)
+                    Top--;
+            else
+                while (Top != y)
+                    Top++;
+        }
+
+        public void swapMoveUP(int x, int y)
+        {
+            if (Top > y)
+                while (Top != y)
+                    Top--;
+            else
+                while (Top != y)
+                    Top++;
+
+            if (Left > x)
+                while (Left != x)
+                    Left--;
+            else
+                while (Left != x)
+                    Left++;
         }
     }
 }
