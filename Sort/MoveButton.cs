@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,6 +25,7 @@ namespace Sort
 
         public void swapMove(int x, int y)
         {
+            Thread.Sleep(300);
             if (Left > x)
                 while (Left != x)
                     Left--;
@@ -40,6 +42,7 @@ namespace Sort
 
         public void swapMoveUP(int x, int y)
         {
+            Thread.Sleep(300);
             if (Top > y)
                 while (Top != y)
                     Top--;
