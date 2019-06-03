@@ -116,6 +116,7 @@ namespace Sort.UserPanel
         private void RandomButton_Click(object sender, EventArgs e)
         {
             NewMasTextBox.Clear();
+            TimerSec.Clear();
             Random rnd = new Random();
             int n = rnd.Next(1, 1000);
             string line = null;
