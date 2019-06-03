@@ -24,6 +24,7 @@ namespace Sort.UserPanel
 
         private void SortButton_Click(object sender, EventArgs e)
         {
+            FirstClick = false;
             Stopwatch time = new Stopwatch();
             long[] array = HeapSort.Sort.arrayReadText(MasReadTextBox.Text);
             time.Start();
@@ -67,7 +68,8 @@ namespace Sort.UserPanel
         private void MasReadTextBox_MouseClick(object sender, MouseEventArgs e)
         {
             if (FirstClick)
-                MasReadTextBox.Text = null; ;
+                MasReadTextBox.Text = null;
+            FirstClick = false;
         }
     }
 }

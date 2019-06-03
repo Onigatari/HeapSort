@@ -46,6 +46,7 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "HeapSort  |  Версия 1.0.0\r\nСopyright © Gaijin Studio, 2019.\r\nРазрабочик: Гамосов " +
     "Станислав [Onigatari]\r\nСОГУ им. Коста Хетагурова.\r\n\r\nВсе права защищены.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
