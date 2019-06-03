@@ -83,6 +83,12 @@
     <Compile Include="UserPanel\FilePanel.Designer.cs">
       <DependentUpon>FilePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserPanel\Information.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPanel\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserPanel\WebPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserPanel\FilePanel.resx">
       <DependentUpon>FilePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPanel\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserPanel\WebPanel.resx">
       <DependentUpon>WebPanel.cs</DependentUpon>

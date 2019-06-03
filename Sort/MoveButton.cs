@@ -22,7 +22,6 @@ namespace Sort
             Top = y;
         }
 
-
         public void swapMove(int x, int y)
         {
             Thread.Sleep(300);

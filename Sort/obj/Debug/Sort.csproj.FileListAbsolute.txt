@@ -26,3 +26,4 @@ C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.csproj.GenerateResource.cach
 C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.csproj.CoreCompileInputs.cache
 C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.exe
 C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.pdb
+C:\Users\DAZAI\Desktop\HeapSort\Sort\obj\Debug\Sort.UserPanel.Information.resources

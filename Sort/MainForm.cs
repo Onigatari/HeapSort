@@ -130,5 +130,10 @@ namespace Sort
                 this.Top = (this.Top + e.Y) - y;
             }
         }
+
+        private void Info_Click(object sender, EventArgs e)
+        {
+            information1.BringToFront();
+        }
     }
 }

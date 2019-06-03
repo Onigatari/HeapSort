@@ -211,49 +211,67 @@ namespace Sort.UserPanel
 
         private void StartButton_Click(object sender, EventArgs e)
         {
+
             StartButton.Text = "Шаг";
             string[] temp = TextBox.Text.Split();
-            switch (step)
+            try
             {
-                case 0:
-                    Case0(temp);
-                    step++;
-                    break;
-                case 1:
-                    Case1();
-                    step++;
-                    break;
-                case 2:
-                    n = array.Length;
-                    move_bildHeap();
-                    step++;
-                    break;
-                case 3:
-                    move_heapSort();
-                    break;
-                case 4:
-                    move_heapSort();
-                    break;
-                case 5:
-                    move_heapSort();
-                    break;
-                case 6:
-                    move_heapSort();
-                    break;
-                case 7:
-                    move_heapSort();
-                    break;
-                case 8:
-                    move_heapSort();
-                    break;
-                case 9:
-                    move_heapSort();
-                    break;
-                case 10:
-                    InpitAnimePanel();
-                    for (int i = 0; i < array.Length; i++)
-                        OutputTextBox.Text += array[i].n + " ";
-                    break;
+                switch (step)
+                {
+                    case 0:
+                        Case0(temp);
+                        step++;
+                        break;
+                    case 1:
+                        Case1();
+                        step++;
+                        break;
+                    case 2:
+                        n = array.Length;
+                        move_bildHeap();
+                        step++;
+                        break;
+                    case 3:
+                        move_heapSort();
+                        break;
+                    case 4:
+                        move_heapSort();
+                        break;
+                    case 5:
+                        move_heapSort();
+                        break;
+                    case 6:
+                        move_heapSort();
+                        break;
+                    case 7:
+                        move_heapSort();
+                        break;
+                    case 8:
+                        move_heapSort();
+                        break;
+                    case 9:
+                        move_heapSort();
+                        break;
+                    case 10:
+                        InpitAnimePanel();
+                        for (int i = 0; i < array.Length; i++)
+                            OutputTextBox.Text += array[i].n + " ";
+                        StartButton.Text = "Конец";
+                        step++;
+                        break;
+                }
+            }
+            catch (Exception)
+            {
+                step = 0;
+                StartXY();
+                ClearAllText();
+                ClearButtonColor();
+                DialogResult result;
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                string message = "Входная строка имеет лишние символы или неверный формат ввода.\nВозможно одно из чисел последовательности привышает допустимые значения";
+                string caption = "Ошибка ввода данных";
+                result = MessageBox.Show(message, caption, buttons);
             }
         }
 
