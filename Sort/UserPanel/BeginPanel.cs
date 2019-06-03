@@ -63,5 +63,11 @@ namespace Sort.UserPanel
             TimerSec.Text = null;
             CountArray.Text = null;
         }
+
+        private void MasReadTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (FirstClick)
+                MasReadTextBox.Text = null; ;
+        }
     }
 }

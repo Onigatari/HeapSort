@@ -60,11 +60,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Constantia", 14F);
+            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(799, 0);
+            this.label2.Location = new System.Drawing.Point(757, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 230);
+            this.label2.Size = new System.Drawing.Size(270, 220);
             this.label2.TabIndex = 15;
             this.label2.Text = resources.GetString("label2.Text");
             // 

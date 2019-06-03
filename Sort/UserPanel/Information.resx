@@ -2698,14 +2698,14 @@
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Системные требования:
-Processor:       1 GHz
-RAM:              512 MB
-Disk:               30 MB
+Processor:         1 GHz
+RAM:               512 MB
+Disk:              30 MB
 32-bit:            4.5 GB
 64-bit:            4.5 GB
 OC:
-    Windows 7 (x86 и x64)
-    Windows 8 (x86 и x64)
+    Windows 7  (x86 и x64)
+    Windows 8  (x86 и x64)
     Windows 10 (x86 и x64)</value>
   </data>
 </root>

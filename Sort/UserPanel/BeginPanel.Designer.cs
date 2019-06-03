@@ -105,6 +105,7 @@
             this.MasReadTextBox.TabIndex = 4;
             this.MasReadTextBox.Text = "Введите изначальную последовательность...";
             this.MasReadTextBox.WordWrap = false;
+            this.MasReadTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MasReadTextBox_MouseClick);
             // 
             // ClearButton
             // 
