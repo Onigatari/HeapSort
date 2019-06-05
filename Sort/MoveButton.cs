@@ -25,31 +25,28 @@ namespace Sort
         public void swapMove(int x, int y)
         {
             Thread.Sleep(300);
-            if (Left > x)
-            {
+            if (Left > x){
                 Thread.Sleep(200);
                 while (Left != x)
                     Left--;
             }
-            else
-            {
+            else{
                 Thread.Sleep(200);
                 while (Left != x)
                     Left++;
             }
-            if(Top > y)
-            {
+            if(Top > y){
                 Thread.Sleep(200);
                 while (Top != y)
                     Top--;
             }
-            else
-            {
+            else{
                 Thread.Sleep(200);
                 while (Top != y)
                     Top++;
             }
         }
+
 
         public void swapMoveUP(int x, int y)
         {

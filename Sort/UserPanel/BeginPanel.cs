@@ -13,7 +13,7 @@ namespace Sort.UserPanel
 {
     public partial class BeginPanel : UserControl
     {
-        public bool FirstClick = true;
+        bool FirstClick = true;
 
         public BeginPanel()
         {

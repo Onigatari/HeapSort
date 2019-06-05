@@ -172,12 +172,9 @@ namespace Sort.UserPanel
 
         private void Case0(string[] temp)
         {
-            point1.Text = temp[0];
-            point2.Text = temp[1];
-            point3.Text = temp[2];
-            point4.Text = temp[3];
-            point5.Text = temp[4];
-            point6.Text = temp[5];
+            point1.Text = temp[0]; point2.Text = temp[1];
+            point3.Text = temp[2]; point4.Text = temp[3];
+            point5.Text = temp[4]; point6.Text = temp[5];
             point7.Text = temp[6];
             for (int i = 0; i < temp.Length; i++)
             {
@@ -228,29 +225,29 @@ namespace Sort.UserPanel
                         break;
                     case 2:
                         n = array.Length;
-                        move_bildHeap();
+                        moveBildHeap();
                         step++;
                         break;
                     case 3:
-                        move_heapSort();
+                        moveHeapSort();
                         break;
                     case 4:
-                        move_heapSort();
+                        moveHeapSort();
                         break;
                     case 5:
-                        move_heapSort();
+                        moveHeapSort();
                         break;
                     case 6:
-                        move_heapSort();
+                        moveHeapSort();
                         break;
                     case 7:
-                        move_heapSort();
+                        moveHeapSort();
                         break;
                     case 8:
-                        move_heapSort();
+                        moveHeapSort();
                         break;
                     case 9:
-                        move_heapSort();
+                        moveHeapSort();
                         break;
                     case 10:
                         InpitAnimePanel();
@@ -275,7 +272,7 @@ namespace Sort.UserPanel
             }
         }
 
-        public void move_swap(int i, int j)
+        public void moveSwap(int i, int j)
         {
             int temp1X = array[i].cord.Location.X;
             int temp1Y = array[i].cord.Location.Y;
@@ -290,13 +287,13 @@ namespace Sort.UserPanel
             array[j] = temp;
         }
 
-        public void move_bildHeap()
+        public void moveBildHeap()
         {
             for (int i = n / 2 - 1; i >= 0; i--)
-                move_siftDown(n, i);
+                moveSiftDown(n, i);
         }
 
-        public void move_siftDown(int n, int i)
+        public void moveSiftDown(int n, int i)
         {
             int size = i;
             int left = 2 * i + 1;
@@ -309,18 +306,18 @@ namespace Sort.UserPanel
 
             if (size != i)
             {
-                move_swap(i, size);
-                move_siftDown(n, size);
+                moveSwap(i, size);
+                moveSiftDown(n, size);
             }
         }
 
-        public void move_heapSort()
+        public void moveHeapSort()
         {
             for (int i = n - 1; i >= 0; i--)
             {
-                move_swap(0, i);
+                moveSwap(0, i);
                 step++;
-                move_siftDown(i, 0);
+                moveSiftDown(i, 0);
                 array[i].cord.BackColor = Color.Green;
                 n--;
                 return;
